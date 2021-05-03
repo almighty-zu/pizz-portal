@@ -1,11 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -22,4 +18,12 @@ function App() {
   );
 }
 
-export default App;
+export default App;*/
+
+import React from 'react';
+import { shallow } from 'enzyme';
+import App from './App';
+
+it('renders without crashing', () => {
+  shallow(<App />);
+});
